@@ -63,15 +63,15 @@ function addLeadingZero(newDate) {
 }
 
 function timeInsert() {
-  const ms = datePicked - new Date();
+  let ms = datePicked - new Date();
+  if (ms <= 0) {
+    clearInterval(timer);
+    ms = 0;
+  input.disabled = false;
+}
   const newDate = convertMs(ms);
   addLeadingZero(newDate);
-  if (ms <= 0) {
-    clearInterval(timer) 
-    ms = 0;
-  const ms = datePicked - new Date();
-  const newDate = convertMs(ms);
-}
+  
 }
 
 flatpickr("#datetime-picker", options);
