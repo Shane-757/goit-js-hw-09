@@ -1,0 +1,25 @@
+.timer {
+    display: flex;
+}
+.field {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    align-items: center;
+}
+.field:not(:last-child) {
+    padding-right: 16px;
+}
+.value {
+    font-size: 30px;
+}
+.label {
+    font-size: 15px;
+}
+button {
+    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.15);
+ 
+}
+input {
+    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.15);
+}
