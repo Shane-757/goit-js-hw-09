@@ -17,16 +17,15 @@ function createPromise(position, delay) {
   });
   data
     .then((x) => {
-      alert(`Fulfilled promise ${position} in ${delay}ms`);
     Notiflix.Notify.success(`Fulfilled promise ${position} in ${delay}ms`);
   })
     .catch((y) => {
-      alert(`Rejected promise ${position} in ${delay}ms`);
     Notiflix.Notify.failure(`Rejected promise ${position} in ${delay}ms`);
   })
 }
 
-function convert() {
+function convert(e) {
+  e.preventDefault();
   let convertFirstField = +firstField.value;
   let convertSecondField = +secondField.value;
   let convertThirdField = +thirdField.value;
