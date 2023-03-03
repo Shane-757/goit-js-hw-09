@@ -4,7 +4,6 @@ let firstField = document.querySelector('[name="delay"]');
 let secondField = document.querySelector('[name="step"]');
 let thirdField = document.querySelector('[name="amount"]');
 
-
 function createPromise(position, delay) {
   const data = new Promise((resolve, reject) => {
     const shouldResolve = Math.random() > 0.3;
@@ -34,4 +33,5 @@ function convert(e) {
     convertFirstField += convertSecondField;
   }
 };
+
 startButton.addEventListener('click', convert);

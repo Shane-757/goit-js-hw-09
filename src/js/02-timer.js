@@ -71,7 +71,6 @@ function timeInsert() {
 }
   const newDate = convertMs(ms);
   addLeadingZero(newDate);
-  
 }
 
 flatpickr("#datetime-picker", options);
